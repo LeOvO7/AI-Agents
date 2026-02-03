@@ -181,22 +181,18 @@ Test 3: In the multi-step instruction, the agent showed an interesting optimizat
 
 ## Task_5
 === SESSION START: Thread ID 'user_123' ===
-
 User (user_123): Hi, my name is Alice and I am in Tokyo.
 --------------------------------------------------
 Agent Output: Hi Alice! How can I assist you today?
-
 User (user_123): What is the weather like where I am?
 --------------------------------------------------
 Agent decides to call: ['get_weather']
   [Tool Executing] Checking weather for Tokyo...
 Tool Output generated.
 Agent Output: The weather in Tokyo is clear with a temperature of 65°F. Enjoy your day!
-
 === SYSTEM RESTART / CRASH SIMULATION ===
 (Simulating that the script ended and started again...)
 === SESSION RESUME: Thread ID 'user_123' ===
-
 User (user_123): Since I'm in Tokyo, count how many 'o's are in the city name, and tell me if that number is equal to 2 + 1.
 --------------------------------------------------
 Agent decides to call: ['count_letter']
@@ -215,8 +211,8 @@ The following Mermaid diagram illustrates the **cyclic graph** architecture impl
 graph TD
     %% Nodes
     __start__([Start]) --> agent
-    agent[Agent Node<br>(GPT-4o-mini)]
-    tools[Tool Node<br>(Python Functions)]
+    agent["Agent Node<br>(GPT-4o-mini)"]
+    tools["Tool Node<br>(Python Functions)"]
     __end__([End])
 
     %% Edges
@@ -227,7 +223,7 @@ graph TD
     %% Persistence Layer Visualization
     subgraph Persistence [Checkpointing Layer]
         direction TB
-        db[(MemorySaver<br>In-Memory DB)]
+        db[("MemorySaver<br>In-Memory DB")]
         agent -.-> db
         tools -.-> db
     end
