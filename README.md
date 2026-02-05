@@ -26,6 +26,7 @@ Qwen is processing...
 Response:
 --------------------------------------------------
 Qwen: Hello! Your name is Leo. How can I assist you today?
+
 **----------------------BREAK(restart conversation)-----------------------**
 ==================================================
 Enter your text (or 'quit' to exit):
