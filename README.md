@@ -16,6 +16,7 @@ This repository contains modularized Python scripts for **Topic 5: RAG**. Functi
 ├── Exercise_9.py                             # Retrieval Score Analysis
 ├── Exercise_10.py                            # Prompt Template Variations
 ├── Exercise_11.py                            # Cross-Document/Cross-Chunk Synthesis
+├── Output.txt                                # Output
 └── README.md                                 # Documentation
 
 ```
