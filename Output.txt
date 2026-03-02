@@ -1,0 +1,371 @@
+Task4_1
+======================================================================
+Llama 3.2-1B MMLU Evaluation (Quantized)
+======================================================================
+
+======================================================================
+Environment Check
+======================================================================
+✓ Running in Google Colab
+✓ Platform: Linux (x86_64)
+✓ GPU Available: NVIDIA A100-SXM4-40GB
+✓ GPU Memory: 42.41 GB
+✓ Quantization disabled - loading full precision model
+⚠️  Could not check Hugging Face authentication
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cuda
+Quantization: None (full precision)
+Expected memory: ~2.5 GB (FP16)
+Number of subjects: 2
+======================================================================
+
+
+Loading model meta-llama/Llama-3.2-1B-Instruct...
+Device: cuda
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:94: UserWarning: 
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.
+You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+config.json: 100%
+ 877/877 [00:00<00:00, 113kB/s]
+tokenizer_config.json: 100%
+ 54.5k/54.5k [00:00<00:00, 6.19MB/s]
+tokenizer.json: 100%
+ 9.09M/9.09M [00:02<00:00, 4.38MB/s]
+special_tokens_map.json: 100%
+ 296/296 [00:00<00:00, 42.7kB/s]
+✓ Tokenizer loaded
+Loading model (this may take 2-3 minutes)...
+model.safetensors: 100%
+ 2.47G/2.47G [00:08<00:00, 37.9MB/s]
+Loading weights: 100%
+ 146/146 [00:00<00:00, 201.87it/s, Materializing param=model.norm.weight]
+generation_config.json: 100%
+ 189/189 [00:00<00:00, 25.3kB/s]
+✓ Model loaded successfully!
+  Model device: cuda:0
+  Model dtype: torch.float16
+  GPU Memory: 2.47 GB allocated, 2.49 GB reserved
+
+======================================================================
+Starting evaluation on 2 subjects
+======================================================================
+
+
+Progress: 1/2 subjects
+
+======================================================================
+Evaluating subject: astronomy
+======================================================================
+README.md: 
+ 53.2k/? [00:00<00:00, 5.39MB/s]
+dataset_infos.json: 
+ 138k/? [00:00<00:00, 15.6MB/s]
+astronomy/test-00000-of-00001.parquet: 100%
+ 28.3k/28.3k [00:00<00:00, 79.1kB/s]
+astronomy/validation-00000-of-00001.parq(…): 100%
+ 6.05k/6.05k [00:00<00:00, 13.3kB/s]
+astronomy/dev-00000-of-00001.parquet: 100%
+ 4.94k/4.94k [00:00<00:00, 13.2kB/s]
+Generating test split: 100%
+ 152/152 [00:00<00:00, 4392.30 examples/s]
+Generating validation split: 100%
+ 16/16 [00:00<00:00, 1504.62 examples/s]
+Generating dev split: 100%
+ 5/5 [00:00<00:00, 461.72 examples/s]
+Testing astronomy: 100%
+ 152/152 [00:04<00:00, 44.35it/s]
+The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+✓ Result: 75/152 correct = 49.34%
+
+Progress: 2/2 subjects
+
+======================================================================
+Evaluating subject: business_ethics
+======================================================================
+business_ethics/test-00000-of-00001.parq(…): 100%
+ 21.6k/21.6k [00:00<00:00, 66.2kB/s]
+business_ethics/validation-00000-of-0000(…): 100%
+ 5.09k/5.09k [00:00<00:00, 13.8kB/s]
+business_ethics/dev-00000-of-00001.parqu(…): 100%
+ 4.96k/4.96k [00:00<00:00, 15.9kB/s]
+Generating test split: 100%
+ 100/100 [00:00<00:00, 7080.91 examples/s]
+Generating validation split: 100%
+ 11/11 [00:00<00:00, 1083.88 examples/s]
+Generating dev split: 100%
+ 5/5 [00:00<00:00, 502.88 examples/s]
+Testing business_ethics: 100%
+ 100/100 [00:02<00:00, 42.86it/s]
+✓ Result: 45/100 correct = 45.00%
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+None (full precision)
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 120
+Overall Accuracy: 47.62%
+Duration: 0.3 minutes
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_full_20260302_145216.json
+
+📊 Top 5 Subjects:
+  1. astronomy: 49.34%
+  2. business_ethics: 45.00%
+
+📉 Bottom 5 Subjects:
+  1. astronomy: 49.34%
+  2. business_ethics: 45.00%
+
+======================================================================
+💾 To download results in Colab:
+======================================================================
+from google.colab import files
+files.download('llama_3.2_1b_mmlu_results_full_20260302_145216.json')
+
+✅ Evaluation complete!
+
+Task4_2
+======================================================================
+Llama 3.2-1B MMLU Evaluation (Quantized)
+======================================================================
+
+======================================================================
+Environment Check
+======================================================================
+✓ Running in Google Colab
+✓ Platform: Linux (x86_64)
+✓ GPU Available: NVIDIA A100-SXM4-40GB
+✓ GPU Memory: 42.41 GB
+✓ bitsandbytes installed - 4-bit quantization available
+⚠️  Could not check Hugging Face authentication
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cuda
+Quantization: 4-bit
+Expected memory: ~1.5 GB
+Number of subjects: 2
+======================================================================
+
+
+Loading model meta-llama/Llama-3.2-1B-Instruct...
+Device: cuda
+✓ Tokenizer loaded
+Using 4-bit quantization (NF4 + double quant)
+Memory usage: ~1.5 GB
+Loading model (this may take 2-3 minutes)...
+Loading weights: 100%
+ 146/146 [00:00<00:00, 303.39it/s, Materializing param=model.norm.weight]
+✓ Model loaded successfully!
+  Model device: cuda:0
+  Model dtype: torch.bfloat16
+  GPU Memory: 1.04 GB allocated, 2.52 GB reserved
+  Quantization: 4-bit active
+
+======================================================================
+Starting evaluation on 2 subjects
+======================================================================
+
+
+Progress: 1/2 subjects
+
+======================================================================
+Evaluating subject: astronomy
+======================================================================
+Testing astronomy: 100%
+ 152/152 [00:09<00:00, 16.51it/s]
+✓ Result: 71/152 correct = 46.71%
+
+Progress: 2/2 subjects
+
+======================================================================
+Evaluating subject: business_ethics
+======================================================================
+Testing business_ethics: 100%
+ 100/100 [00:06<00:00, 16.64it/s]
+✓ Result: 40/100 correct = 40.00%
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Quantization: 4-bit
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 111
+Overall Accuracy: 44.05%
+Duration: 0.3 minutes
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_4bit_20260302_145733.json
+
+📊 Top 5 Subjects:
+  1. astronomy: 46.71%
+  2. business_ethics: 40.00%
+
+📉 Bottom 5 Subjects:
+  1. astronomy: 46.71%
+  2. business_ethics: 40.00%
+
+======================================================================
+💾 To download results in Colab:
+======================================================================
+from google.colab import files
+files.download('llama_3.2_1b_mmlu_results_4bit_20260302_145733.json')
+
+✅ Evaluation complete!
+
+Task4_3
+======================================================================
+Llama 3.2-1B MMLU Evaluation (Quantized)
+======================================================================
+
+======================================================================
+Environment Check
+======================================================================
+✓ Running in Google Colab
+✓ Platform: Linux (x86_64)
+✓ GPU Available: NVIDIA A100-SXM4-40GB
+✓ GPU Memory: 42.41 GB
+✓ bitsandbytes installed - 8-bit quantization available
+⚠️  Could not check Hugging Face authentication
+
+======================================================================
+Configuration
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Device: cuda
+Quantization: 8-bit
+Expected memory: ~2.5 GB
+Number of subjects: 2
+======================================================================
+
+
+Loading model meta-llama/Llama-3.2-1B-Instruct...
+Device: cuda
+✓ Tokenizer loaded
+Using 8-bit quantization
+Memory usage: ~2.5 GB
+Loading model (this may take 2-3 minutes)...
+Loading weights: 100%
+ 146/146 [00:02<00:00, 56.15it/s, Materializing param=model.norm.weight]
+✓ Model loaded successfully!
+  Model device: cuda:0
+  Model dtype: torch.bfloat16
+  GPU Memory: 1.51 GB allocated, 2.54 GB reserved
+  Quantization: 8-bit active
+
+======================================================================
+Starting evaluation on 2 subjects
+======================================================================
+
+
+Progress: 1/2 subjects
+
+======================================================================
+Evaluating subject: astronomy
+======================================================================
+Testing astronomy: 100%
+ 152/152 [00:16<00:00,  9.32it/s]
+/usr/local/lib/python3.12/dist-packages/bitsandbytes/autograd/_functions.py:123: UserWarning: MatMul8bitLt: inputs will be cast from torch.bfloat16 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+✓ Result: 78/152 correct = 51.32%
+
+Progress: 2/2 subjects
+
+======================================================================
+Evaluating subject: business_ethics
+======================================================================
+Testing business_ethics: 100%
+ 100/100 [00:10<00:00,  8.99it/s]
+✓ Result: 46/100 correct = 46.00%
+
+======================================================================
+EVALUATION SUMMARY
+======================================================================
+Model: meta-llama/Llama-3.2-1B-Instruct
+Quantization: 8-bit
+Total Subjects: 2
+Total Questions: 252
+Total Correct: 124
+Overall Accuracy: 49.21%
+Duration: 0.5 minutes
+======================================================================
+
+✓ Results saved to: llama_3.2_1b_mmlu_results_8bit_20260302_145921.json
+
+📊 Top 5 Subjects:
+  1. astronomy: 51.32%
+  2. business_ethics: 46.00%
+
+📉 Bottom 5 Subjects:
+  1. astronomy: 51.32%
+  2. business_ethics: 46.00%
+
+======================================================================
+💾 To download results in Colab:
+======================================================================
+from google.colab import files
+files.download('llama_3.2_1b_mmlu_results_8bit_20260302_145921.json')
+
+✅ Evaluation complete!
+
+Task5
+==================== EVALUATION SUMMARY ====================
+Model                               | Acc      | Real(s)  | CPU(s)   | GPU(s)  
+meta-llama/Llama-3.2-1B-Instruct    | 41.53% | 123.26   | 85.36    | 123.26  
+Qwen/Qwen2.5-1.5B-Instruct          | 52.96% | 180.46   | 175.08   | 180.46  
+TinyLlama/TinyLlama-1.1B-Chat-v1.0  | 23.85% | 144.11   | 133.57   | 144.11  
+
+Task8 (MAX_HISTORY = 6)
+
+### The model does not remember the username when there are more than six dialogues. ###
+
+Loading meta-llama/Llama-3.2-1B-Instruct...
+Loading weights: 100%
+ 146/146 [00:00<00:00, 197.67it/s, Materializing param=model.norm.weight]
+
+==================================================
+Chat Started | History: ON
+==================================================
+
+User: My name is Leo
+Assistant: The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Nice to meet you, Leo. How can I assist you today?
+User: What day is today?
+Assistant: I'm an AI, I don't have real-time access to the current date. However, I can suggest ways for you to find out the current day if you'd like.
+User: What is your model version?
+Assistant: My model is a large language model, and I'm constantly updated with new versions and improvements. My current version is likely a high version, but I don't have a specific model identifier or version number.
+User: What is my name?
+Assistant: I don't have any information about your identity or personal details. Our conversation just started, and I don't retain any information from previous interactions.
+
+
+### The model can remember the user's name after six small conversations. ###
+
+Loading meta-llama/Llama-3.2-1B-Instruct...
+Loading weights: 100%
+ 146/146 [00:00<00:00, 183.46it/s, Materializing param=model.norm.weight]
+
+==================================================
+Chat Started | History: ON
+==================================================
+
+User: My name is Leo.
+Assistant: Hello Leo, how can I help you today?
+User: Who are you?
+Assistant: I am an AI assistant, and I don't have a personal identity or physical presence. I exist solely to provide information and assist with tasks to the best of my abilities. I can learn about you, Leo, and respond accordingly.
+User: What is my name?
+Assistant: Your name is Leo.
