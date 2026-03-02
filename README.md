@@ -164,3 +164,12 @@ Retrieving more blocks provides a more comprehensive information base, because a
 ### *Does contradictory information in different chunks cause problems?*
 This can cause problems, especially when the system extracts too many "incompletely matching" edge blocks, leading to logical inconsistencies and noise pollution.
 In my results, the system forcibly pulled a large amount of irrelevant information to fill in the gaps in order to make up 10 blocks.
+
+
+## Project Topics
+* [**Topic 1: Running an LLM**](../../tree/Topic-1-Running-an-LLM)
+* [**Topic 2: Agent Orchestration Frameworks**](../../tree/Topic-2-Agent-Orchestration-Frameworks)
+* [**Topic 3: Agent Tool Use**](../../tree/Topic-3-Agent-Tool-Use)
+* [**Topic 4: Exploring Tools**](../../tree/Topic-4-Exploring-Tools)
+* [**Topic 5: RAG**](../../tree/Topic-5-RAG)
+* [**Topic 6: VLM**](../../tree/Topic-6-VLM)
