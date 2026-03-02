@@ -2,6 +2,8 @@
 
 This repository contains the refactored code from the original `Topic6.ipynb`. The project has been modularized into separate Python scripts for better maintainability and clarity.
 
+---
+
 ## Project Structure
 
 ```text
