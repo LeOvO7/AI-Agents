@@ -69,7 +69,7 @@ def on_upload(change):
         chat_state['current_image'] = base64.b64encode(content).decode('utf-8')
         
         with chat_log:
-            print("--- 📸 Image uploaded successfully ---")
+            print("---  Image uploaded successfully ---")
 
 upload_btn.observe(on_upload, names='value')
 
@@ -79,7 +79,7 @@ def on_send(b):
     
     text_input.value = ""
     with chat_log:
-        print(f"👤 You: {user_msg}")
+        print(f" You: {user_msg}")
     
     status_label.value = " LLaVA is thinking..."
     
@@ -113,5 +113,6 @@ ui = widgets.VBox([
     status_label,
     widgets.HBox([text_input, send_btn])
 ])
+
 
 display(ui)
