@@ -49,4 +49,6 @@ graph TD
     style tools fill:#fff9c4,stroke:#fbc02d,stroke-width:2px
     style db fill:#e0e0e0,stroke:#616161,stroke-dasharray: 5 5
 ```
+## Task_6
+The opportunity lies in parallelizing independent tool calls. In the example, the agent executed the tasks sequentially: it counted the letters first, waited for the result, and then calculated "2 + 1". Since the calculation of "2 + 1" does not depend on the letter count, the Agent should have requested both the count_letter and calculate tools in the very first turn. This would have compressed two separate round-trips into a single execution step, significantly improve efficiency.
 
