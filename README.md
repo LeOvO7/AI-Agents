@@ -1,5 +1,5 @@
 # AI-Agents
-### CS 6501 Workshop on Building AI Agents 26Sp
+### CS 6501 Workshop on Building AI Agents-26Sp
 ---
 
 ## Project Topics
