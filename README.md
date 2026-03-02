@@ -7,7 +7,7 @@
 
 ```text
 .
-├── README.md               
+├── README.md               # Documentation
 ├── llama_mmlu_eval.py      # Original file
 ├── simple_chat_agent.py    # Original file
 ├── Output.txt              # Execution logs
