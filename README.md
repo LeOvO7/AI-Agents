@@ -1,4 +1,26 @@
-# AI-Agents
+# Topic 5: Retrieval-Augmented Generation (RAG)
+
+This repository contains modularized Python scripts for **Topic 5: RAG**. Functionality added separately based on the exercises, building upon the existing code.
+
+
+## Project Structure
+
+```text
+.
+├── Exercise_2.py       # Open Model + RAG vs. Large Model Comparison
+├── Exercise_6.py       # Query Phrasing Sensitivity
+├── Exercise_7.py       # Chunk Overlap Experiment
+├── Exercise_8.py       # Chunk Size Experiment
+├── Exercise_9.py       # Retrieval Score Analysis
+├── Exercise_10.py      # Prompt Template Variations
+├── Exercise_11.py      # Cross-Document/Cross-Chunk Synthesis
+└── README.md           # Documentation
+
+```
+
+
+
+
 ## Exercise 1: Open Model RAG vs. No RAG Comparison
 ### *Does the model hallucinate specific values without RAG?*
 Yes, the model creates serious illusions when there is a lack of RAG context. For example, it suggests using a mixture of "80% gasoline and 20% distilled water" as engine oil.
