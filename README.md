@@ -1,6 +1,6 @@
 # AI-Agents
-
-
+CS 6501 Workshop on Building AI Agents
+---
 ## Project Topics
 * [**Topic 1: Running an LLM**](../../tree/Topic-1-Running-an-LLM)
 * [**Topic 2: Agent Orchestration Frameworks**](../../tree/Topic-2-Agent-Orchestration-Frameworks)
