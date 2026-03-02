@@ -1,6 +1,8 @@
 # Topic 4: Exploring Tools & ReAct Agents
 
-## Directory Structure
+---
+
+## Project Structure
 ```text
 .
 ├── Task_5.py               # OpenWeatherMap Project
