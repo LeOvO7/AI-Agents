@@ -60,3 +60,10 @@ graph TD
 ## Task_6
 The opportunity lies in parallelizing independent tool calls. In the example, the agent executed the tasks sequentially: it counted the letters first, waited for the result, and then calculated "2 + 1". Since the calculation of "2 + 1" does not depend on the letter count, the Agent should have requested both the count_letter and calculate tools in the very first turn. This would have compressed two separate round-trips into a single execution step, significantly improve efficiency.
 
+## Project Topics
+* [**Topic 1: Running an LLM**](../../tree/Topic-1-Running-an-LLM)
+* [**Topic 2: Agent Orchestration Frameworks**](../../tree/Topic-2-Agent-Orchestration-Frameworks)
+* [**Topic 3: Agent Tool Use**](../../tree/Topic-3-Agent-Tool-Use)
+* [**Topic 4: Exploring Tools**](../../tree/Topic-4-Exploring-Tools)
+* [**Topic 5: RAG**](../../tree/Topic-5-RAG)
+* [**Topic 6: VLM**](../../tree/Topic-6-VLM)
