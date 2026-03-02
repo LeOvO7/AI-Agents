@@ -15,7 +15,7 @@
 ├── langgraph-tool-handling.py  # Original file
 ├── llama_mmlu_eval.py          # Original file
 ├── manual-tool-handling.py     # Original file
-├── output.txt                  # Execution logs and tool-call traces
+├── output.txt                  # Output
 └── README.md                   # Documentation
 ```
 ## Task_5
