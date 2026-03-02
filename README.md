@@ -7,14 +7,16 @@ This repository contains modularized Python scripts for **Topic 5: RAG**. Functi
 
 ```text
 .
-├── Exercise_2.py       # Open Model + RAG vs. Large Model Comparison
-├── Exercise_6.py       # Query Phrasing Sensitivity
-├── Exercise_7.py       # Chunk Overlap Experiment
-├── Exercise_8.py       # Chunk Size Experiment
-├── Exercise_9.py       # Retrieval Score Analysis
-├── Exercise_10.py      # Prompt Template Variations
-├── Exercise_11.py      # Cross-Document/Cross-Chunk Synthesis
-└── README.md           # Documentation
+├── manual_rag_pipeline_universal.ipynb       # Original notebook
+├── Topic5.ipynb                              # Full notebook
+├── Exercise_2.py                             # Open Model + RAG vs. Large Model Comparison
+├── Exercise_6.py                             # Query Phrasing Sensitivity
+├── Exercise_7.py                             # Chunk Overlap Experiment
+├── Exercise_8.py                             # Chunk Size Experiment
+├── Exercise_9.py                             # Retrieval Score Analysis
+├── Exercise_10.py                            # Prompt Template Variations
+├── Exercise_11.py                            # Cross-Document/Cross-Chunk Synthesis
+└── README.md                                 # Documentation
 
 ```
 
