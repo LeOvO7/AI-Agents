@@ -3,6 +3,8 @@
 This repository contains modularized Python scripts for **Topic 5: RAG**. Functionality added separately based on the exercises, building upon the existing code.
 
 
+---
+
 ## Project Structure
 
 ```text
