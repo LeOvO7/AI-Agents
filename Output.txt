@@ -1,0 +1,24 @@
+Exercise_1
+
+---  Image uploaded successfully ---
+ You: what is in the image?
+ LLaVA:  The image shows a cat sitting on a railing, looking directly at the camera. It appears to be a stylized, possibly digitally altered or filtered photo, with a dual view: one half of the cat's face is normal, while the other half has a humorous exaggeration of features. The background is simple, with a plain green wall and a light source creating an interesting shadow on the wall behind the cat. 
+
+
+Exercise_2
+
+Extracting frames every 2 seconds...
+Starting LLaVA analysis...
+[00:00] Detection: Empty
+[00:01] Detection: Empty
+[00:03] Detection: Person present
+[00:05] Detection: Empty
+[00:07] Detection: Empty
+[00:09] Detection: Person present
+[00:11] Detection: Empty
+
+--- Surveillance Report ---
+Event: Person ENTERED at 00:03
+Event: Person EXITED at 00:05
+Event: Person ENTERED at 00:09
+Event: Person EXITED at 00:11
