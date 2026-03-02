@@ -21,3 +21,11 @@ The code inspects user_input for keywords like "quit", "exit", "verbose", or "qu
 I think the key difference is the ReAct agent graph simplifies the view by hiding complexity, while the ToolNode graph "unrolls" the execution loop, making the interaction between the LLM and the tools visible and modifiable.
 ### *What is an example of a case where the structure imposed by the LangChain react agent is too restrictive and you'd want to pursue the toolnode approach?*
 I think under the scenario like an agent needs to send an email or delete a database record, but strictly requires human confirmation before executing these sensitive actions. Because in React, user cannot easily "pause" the internal loop inside agent to wait for user input.
+
+## Project Topics
+* [**Topic 1: Running an LLM**](../../tree/Topic-1-Running-an-LLM)
+* [**Topic 2: Agent Orchestration Frameworks**](../../tree/Topic-2-Agent-Orchestration-Frameworks)
+* [**Topic 3: Agent Tool Use**](../../tree/Topic-3-Agent-Tool-Use)
+* [**Topic 4: Exploring Tools**](../../tree/Topic-4-Exploring-Tools)
+* [**Topic 5: RAG**](../../tree/Topic-5-RAG)
+* [**Topic 6: VLM**](../../tree/Topic-6-VLM)
