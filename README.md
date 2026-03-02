@@ -18,6 +18,14 @@
 ├── output.txt                  # Output
 └── README.md                   # Documentation
 ```
+
+## Task_4
+Test 1 & 2: The output demonstrate parallel tool execution. In Test 1, the LLM recognized that counting 's's and 'i's were independent tasks and issued both count_letter calls simultaneously in a single turn. This reduces the number of round-trips to the LLM and speeds up response time.
+output
+Test 2: It correctly identified that it could not perform the calculate function until it had retrieved the counts from the count_letter tool. 
+Test 3: In the multi-step instruction, the agent showed an interesting optimization strategy. Instead of strictly waiting for the text to be reversed before counting the letter 'r', the agent parallelized these steps in Turn 2. It seemingly understood that the frequency of a letter is invariant to string reversal, allowing it to execute the tasks concurrently for greater efficiency while still arriving at the correct final result.
+
+
 ## Task_5
 ### System Architecture
 
