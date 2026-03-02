@@ -6,9 +6,9 @@ This repository contains the refactored code from the original `Topic6.ipynb`. T
 
 ```text
 .
-├── Exercise_1.py       # Source code for the first exercise
-├── Exercise_2.py       # Source code for the second exercise
-├── output.txt          # Recorded program outputs
+├── Exercise_1.py       
+├── Exercise_2.py       
+├── output.txt          # Outputs
 └── README.md           # Documentation
 ```
 
