@@ -31,3 +31,4 @@ I think under the scenario like an agent needs to send an email or delete a data
 * [**Topic 4: Exploring Tools**](../../tree/Topic-4-Exploring-Tools)
 * [**Topic 5: RAG**](../../tree/Topic-5-RAG)
 * [**Topic 6: VLM**](../../tree/Topic-6-VLM)
+* [**Topic 7: MCP&A2A**](../../tree/Topic-7-MCP-and-A2A)
