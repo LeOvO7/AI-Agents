@@ -169,7 +169,7 @@ In my results, the system forcibly pulled a large amount of irrelevant informati
 
 
 ## Group
-Chenxu Li-jnr2jp
+Chenxu Li-jnr2jp,
 Wenhao Xu-wx8mcm
 
 ## Project Topics
