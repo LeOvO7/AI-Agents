@@ -168,6 +168,10 @@ This can cause problems, especially when the system extracts too many "incomplet
 In my results, the system forcibly pulled a large amount of irrelevant information to fill in the gaps in order to make up 10 blocks.
 
 
+## Group
+Chenxu Li-jnr2jp
+Wenhao Xu-wx8mcm
+
 ## Project Topics
 * [**Topic 1: Running an LLM**](../../tree/Topic-1-Running-an-LLM)
 * [**Topic 2: Agent Orchestration Frameworks**](../../tree/Topic-2-Agent-Orchestration-Frameworks)
