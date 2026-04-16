@@ -68,3 +68,4 @@ The opportunity lies in parallelizing independent tool calls. In the example, th
 * [**Topic 5: RAG**](../../tree/Topic-5-RAG)
 * [**Topic 6: VLM**](../../tree/Topic-6-VLM)
 * [**Topic 7: MCP&A2A**](../../tree/Topic-7-MCP-and-A2A)
+* [**Project**](https://github.com/LeOvO7/LLM-distiller)
